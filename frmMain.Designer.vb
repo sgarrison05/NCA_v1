@@ -27,7 +27,7 @@ Partial Class frmMain
         btnClose = New Button()
         brnStart = New Button()
         dgvCheckIns = New DataGridView()
-        txbNet = New TextBox()
+        txbCurrentNet = New TextBox()
         lblNetID = New Label()
         lblClubID = New Label()
         txbClubName = New TextBox()
@@ -38,9 +38,9 @@ Partial Class frmMain
         txbFrequency = New TextBox()
         lblFrequencyID = New Label()
         lblNetControlID = New Label()
-        TextBox1 = New TextBox()
+        txbNetControl = New TextBox()
         lblLogStationID = New Label()
-        TextBox2 = New TextBox()
+        txbLogStation = New TextBox()
         CS = New DataGridViewTextBoxColumn()
         QST = New DataGridViewTextBoxColumn()
         Name = New DataGridViewTextBoxColumn()
@@ -53,11 +53,11 @@ Partial Class frmMain
         lblQSTID = New Label()
         lblTStartID = New Label()
         lblTEndID = New Label()
-        TextBox3 = New TextBox()
-        TextBox4 = New TextBox()
-        TextBox5 = New TextBox()
-        TextBox6 = New TextBox()
-        TextBox7 = New TextBox()
+        txbNetDate = New TextBox()
+        txbCheckIns = New TextBox()
+        txbQST = New TextBox()
+        txbTimeStart = New TextBox()
+        txbTimeEnd = New TextBox()
         lblArrowID = New Label()
         grpboxCNET.SuspendLayout()
         CType(dgvCheckIns, ComponentModel.ISupportInitialize).BeginInit()
@@ -67,9 +67,9 @@ Partial Class frmMain
         ' grpboxCNET
         ' 
         grpboxCNET.Controls.Add(lblLogStationID)
-        grpboxCNET.Controls.Add(TextBox2)
+        grpboxCNET.Controls.Add(txbLogStation)
         grpboxCNET.Controls.Add(lblNetControlID)
-        grpboxCNET.Controls.Add(TextBox1)
+        grpboxCNET.Controls.Add(txbNetControl)
         grpboxCNET.Controls.Add(cmbBand)
         grpboxCNET.Controls.Add(lblBandID)
         grpboxCNET.Controls.Add(cmbMode)
@@ -79,7 +79,7 @@ Partial Class frmMain
         grpboxCNET.Controls.Add(lblClubID)
         grpboxCNET.Controls.Add(txbClubName)
         grpboxCNET.Controls.Add(lblNetID)
-        grpboxCNET.Controls.Add(txbNet)
+        grpboxCNET.Controls.Add(txbCurrentNet)
         grpboxCNET.Controls.Add(btnEnd)
         grpboxCNET.Controls.Add(btnClose)
         grpboxCNET.Controls.Add(brnStart)
@@ -132,12 +132,12 @@ Partial Class frmMain
         dgvCheckIns.Size = New Size(776, 348)
         dgvCheckIns.TabIndex = 1
         ' 
-        ' txbNet
+        ' txbCurrentNet
         ' 
-        txbNet.Location = New Point(38, 27)
-        txbNet.Name = "txbNet"
-        txbNet.Size = New Size(277, 23)
-        txbNet.TabIndex = 3
+        txbCurrentNet.Location = New Point(38, 27)
+        txbCurrentNet.Name = "txbCurrentNet"
+        txbCurrentNet.Size = New Size(277, 23)
+        txbCurrentNet.TabIndex = 3
         ' 
         ' lblNetID
         ' 
@@ -223,12 +223,12 @@ Partial Class frmMain
         lblNetControlID.TabIndex = 17
         lblNetControlID.Text = "NC"
         ' 
-        ' TextBox1
+        ' txbNetControl
         ' 
-        TextBox1.Location = New Point(40, 111)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(99, 23)
-        TextBox1.TabIndex = 16
+        txbNetControl.Location = New Point(40, 111)
+        txbNetControl.Name = "txbNetControl"
+        txbNetControl.Size = New Size(99, 23)
+        txbNetControl.TabIndex = 16
         ' 
         ' lblLogStationID
         ' 
@@ -239,12 +239,12 @@ Partial Class frmMain
         lblLogStationID.TabIndex = 19
         lblLogStationID.Text = "LS"
         ' 
-        ' TextBox2
+        ' txbLogStation
         ' 
-        TextBox2.Location = New Point(191, 111)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(104, 23)
-        TextBox2.TabIndex = 18
+        txbLogStation.Location = New Point(191, 111)
+        txbLogStation.Name = "txbLogStation"
+        txbLogStation.Size = New Size(104, 23)
+        txbLogStation.TabIndex = 18
         ' 
         ' CS
         ' 
@@ -351,40 +351,40 @@ Partial Class frmMain
         lblTEndID.TabIndex = 7
         lblTEndID.Text = "Net Time End"
         ' 
-        ' TextBox3
+        ' txbNetDate
         ' 
-        TextBox3.Location = New Point(20, 205)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(100, 23)
-        TextBox3.TabIndex = 8
+        txbNetDate.Location = New Point(20, 205)
+        txbNetDate.Name = "txbNetDate"
+        txbNetDate.Size = New Size(100, 23)
+        txbNetDate.TabIndex = 8
         ' 
-        ' TextBox4
+        ' txbCheckIns
         ' 
-        TextBox4.Location = New Point(163, 205)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(60, 23)
-        TextBox4.TabIndex = 9
+        txbCheckIns.Location = New Point(163, 205)
+        txbCheckIns.Name = "txbCheckIns"
+        txbCheckIns.Size = New Size(60, 23)
+        txbCheckIns.TabIndex = 9
         ' 
-        ' TextBox5
+        ' txbQST
         ' 
-        TextBox5.Location = New Point(262, 205)
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(52, 23)
-        TextBox5.TabIndex = 10
+        txbQST.Location = New Point(262, 205)
+        txbQST.Name = "txbQST"
+        txbQST.Size = New Size(52, 23)
+        txbQST.TabIndex = 10
         ' 
-        ' TextBox6
+        ' txbTimeStart
         ' 
-        TextBox6.Location = New Point(386, 205)
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(82, 23)
-        TextBox6.TabIndex = 11
+        txbTimeStart.Location = New Point(386, 205)
+        txbTimeStart.Name = "txbTimeStart"
+        txbTimeStart.Size = New Size(82, 23)
+        txbTimeStart.TabIndex = 11
         ' 
-        ' TextBox7
+        ' txbTimeEnd
         ' 
-        TextBox7.Location = New Point(522, 205)
-        TextBox7.Name = "TextBox7"
-        TextBox7.Size = New Size(78, 23)
-        TextBox7.TabIndex = 12
+        txbTimeEnd.Location = New Point(522, 205)
+        txbTimeEnd.Name = "txbTimeEnd"
+        txbTimeEnd.Size = New Size(78, 23)
+        txbTimeEnd.TabIndex = 12
         ' 
         ' lblArrowID
         ' 
@@ -401,11 +401,11 @@ Partial Class frmMain
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 617)
         Controls.Add(lblArrowID)
-        Controls.Add(TextBox7)
-        Controls.Add(TextBox6)
-        Controls.Add(TextBox5)
-        Controls.Add(TextBox4)
-        Controls.Add(TextBox3)
+        Controls.Add(txbTimeEnd)
+        Controls.Add(txbTimeStart)
+        Controls.Add(txbQST)
+        Controls.Add(txbCheckIns)
+        Controls.Add(txbNetDate)
         Controls.Add(lblTEndID)
         Controls.Add(lblTStartID)
         Controls.Add(lblQSTID)
@@ -433,7 +433,7 @@ Partial Class frmMain
     Friend WithEvents lblClubID As Label
     Friend WithEvents txbClubName As TextBox
     Friend WithEvents lblNetID As Label
-    Friend WithEvents txbNet As TextBox
+    Friend WithEvents txbCurrentNet As TextBox
     Friend WithEvents lblModeID As Label
     Friend WithEvents cmbMode As ComboBox
     Friend WithEvents cmbBand As ComboBox
@@ -441,9 +441,9 @@ Partial Class frmMain
     Friend WithEvents lblFrequencyID As Label
     Friend WithEvents txbFrequency As TextBox
     Friend WithEvents lblLogStationID As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txbLogStation As TextBox
     Friend WithEvents lblNetControlID As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txbNetControl As TextBox
     Friend WithEvents CS As DataGridViewTextBoxColumn
     Friend WithEvents QST As DataGridViewTextBoxColumn
     Friend WithEvents Name As DataGridViewTextBoxColumn
@@ -456,11 +456,11 @@ Partial Class frmMain
     Friend WithEvents lblQSTID As Label
     Friend WithEvents lblTStartID As Label
     Friend WithEvents lblTEndID As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents txbNetDate As TextBox
+    Friend WithEvents txbCheckIns As TextBox
+    Friend WithEvents txbQST As TextBox
+    Friend WithEvents txbTimeStart As TextBox
+    Friend WithEvents txbTimeEnd As TextBox
     Friend WithEvents lblArrowID As Label
 
 End Class
