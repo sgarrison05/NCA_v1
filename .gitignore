@@ -2,6 +2,10 @@
 bin/
 obj/
 
+# Specific Subdirectories
+.github/
+.vs/
+
 #User Specific Files
 *.user
 *.suo

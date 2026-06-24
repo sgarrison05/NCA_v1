@@ -23,31 +23,27 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         grpboxCNET = New GroupBox()
+        lblLogStationID = New Label()
+        txbLogStation = New TextBox()
+        lblNetControlID = New Label()
+        txbNetControl = New TextBox()
+        cmbBand = New ComboBox()
+        lblBandID = New Label()
+        cmbMode = New ComboBox()
+        lblModeID = New Label()
+        lblFrequencyID = New Label()
+        txbFrequency = New TextBox()
+        lblClubID = New Label()
+        txbClubName = New TextBox()
+        lblNetID = New Label()
+        txbCurrentNet = New TextBox()
         btnEnd = New Button()
         btnClose = New Button()
         brnStart = New Button()
         dgvCheckIns = New DataGridView()
-        txbCurrentNet = New TextBox()
-        lblNetID = New Label()
-        lblClubID = New Label()
-        txbClubName = New TextBox()
-        lblModeID = New Label()
-        cmbMode = New ComboBox()
-        cmbBand = New ComboBox()
-        lblBandID = New Label()
-        txbFrequency = New TextBox()
-        lblFrequencyID = New Label()
-        lblNetControlID = New Label()
-        txbNetControl = New TextBox()
-        lblLogStationID = New Label()
-        txbLogStation = New TextBox()
-        CS = New DataGridViewTextBoxColumn()
-        QST = New DataGridViewTextBoxColumn()
-        Name = New DataGridViewTextBoxColumn()
-        CITY = New DataGridViewTextBoxColumn()
         grpboxType = New GroupBox()
-        rbtnRepeater = New RadioButton()
         rbtnSimplex = New RadioButton()
+        rbtnRepeater = New RadioButton()
         lblSessionDateID = New Label()
         lblCheckinID = New Label()
         lblQSTID = New Label()
@@ -59,6 +55,10 @@ Partial Class frmMain
         txbTimeStart = New TextBox()
         txbTimeEnd = New TextBox()
         lblArrowID = New Label()
+        CS = New DataGridViewTextBoxColumn()
+        QST = New DataGridViewTextBoxColumn()
+        Name = New DataGridViewTextBoxColumn()
+        CITY = New DataGridViewTextBoxColumn()
         grpboxCNET.SuspendLayout()
         CType(dgvCheckIns, ComponentModel.ISupportInitialize).BeginInit()
         grpboxType.SuspendLayout()
@@ -89,6 +89,120 @@ Partial Class frmMain
         grpboxCNET.TabIndex = 0
         grpboxCNET.TabStop = False
         grpboxCNET.Text = "Current Net"
+        ' 
+        ' lblLogStationID
+        ' 
+        lblLogStationID.AutoSize = True
+        lblLogStationID.Location = New Point(166, 114)
+        lblLogStationID.Name = "lblLogStationID"
+        lblLogStationID.Size = New Size(19, 15)
+        lblLogStationID.TabIndex = 19
+        lblLogStationID.Text = "LS"
+        ' 
+        ' txbLogStation
+        ' 
+        txbLogStation.Location = New Point(191, 111)
+        txbLogStation.Name = "txbLogStation"
+        txbLogStation.Size = New Size(104, 23)
+        txbLogStation.TabIndex = 18
+        ' 
+        ' lblNetControlID
+        ' 
+        lblNetControlID.AutoSize = True
+        lblNetControlID.Location = New Point(8, 114)
+        lblNetControlID.Name = "lblNetControlID"
+        lblNetControlID.Size = New Size(24, 15)
+        lblNetControlID.TabIndex = 17
+        lblNetControlID.Text = "NC"
+        ' 
+        ' txbNetControl
+        ' 
+        txbNetControl.Location = New Point(40, 111)
+        txbNetControl.Name = "txbNetControl"
+        txbNetControl.Size = New Size(99, 23)
+        txbNetControl.TabIndex = 16
+        ' 
+        ' cmbBand
+        ' 
+        cmbBand.FormattingEnabled = True
+        cmbBand.Location = New Point(334, 69)
+        cmbBand.Name = "cmbBand"
+        cmbBand.Size = New Size(77, 23)
+        cmbBand.TabIndex = 15
+        ' 
+        ' lblBandID
+        ' 
+        lblBandID.AutoSize = True
+        lblBandID.Location = New Point(290, 72)
+        lblBandID.Name = "lblBandID"
+        lblBandID.Size = New Size(34, 15)
+        lblBandID.TabIndex = 14
+        lblBandID.Text = "Band"
+        ' 
+        ' cmbMode
+        ' 
+        cmbMode.FormattingEnabled = True
+        cmbMode.Location = New Point(203, 69)
+        cmbMode.Name = "cmbMode"
+        cmbMode.Size = New Size(77, 23)
+        cmbMode.TabIndex = 13
+        ' 
+        ' lblModeID
+        ' 
+        lblModeID.AutoSize = True
+        lblModeID.Location = New Point(159, 72)
+        lblModeID.Name = "lblModeID"
+        lblModeID.Size = New Size(38, 15)
+        lblModeID.TabIndex = 12
+        lblModeID.Text = "Mode"
+        ' 
+        ' lblFrequencyID
+        ' 
+        lblFrequencyID.AutoSize = True
+        lblFrequencyID.Location = New Point(8, 72)
+        lblFrequencyID.Name = "lblFrequencyID"
+        lblFrequencyID.Size = New Size(62, 15)
+        lblFrequencyID.TabIndex = 10
+        lblFrequencyID.Text = "Frequency"
+        ' 
+        ' txbFrequency
+        ' 
+        txbFrequency.Location = New Point(77, 69)
+        txbFrequency.Name = "txbFrequency"
+        txbFrequency.Size = New Size(73, 23)
+        txbFrequency.TabIndex = 9
+        ' 
+        ' lblClubID
+        ' 
+        lblClubID.AutoSize = True
+        lblClubID.Location = New Point(336, 30)
+        lblClubID.Name = "lblClubID"
+        lblClubID.Size = New Size(67, 15)
+        lblClubID.TabIndex = 6
+        lblClubID.Text = "Club Name"
+        ' 
+        ' txbClubName
+        ' 
+        txbClubName.Location = New Point(409, 27)
+        txbClubName.Name = "txbClubName"
+        txbClubName.Size = New Size(198, 23)
+        txbClubName.TabIndex = 5
+        ' 
+        ' lblNetID
+        ' 
+        lblNetID.AutoSize = True
+        lblNetID.Location = New Point(6, 30)
+        lblNetID.Name = "lblNetID"
+        lblNetID.Size = New Size(26, 15)
+        lblNetID.TabIndex = 4
+        lblNetID.Text = "Net"
+        ' 
+        ' txbCurrentNet
+        ' 
+        txbCurrentNet.Location = New Point(38, 27)
+        txbCurrentNet.Name = "txbCurrentNet"
+        txbCurrentNet.Size = New Size(277, 23)
+        txbCurrentNet.TabIndex = 3
         ' 
         ' btnEnd
         ' 
@@ -132,145 +246,6 @@ Partial Class frmMain
         dgvCheckIns.Size = New Size(776, 348)
         dgvCheckIns.TabIndex = 1
         ' 
-        ' txbCurrentNet
-        ' 
-        txbCurrentNet.Location = New Point(38, 27)
-        txbCurrentNet.Name = "txbCurrentNet"
-        txbCurrentNet.Size = New Size(277, 23)
-        txbCurrentNet.TabIndex = 3
-        ' 
-        ' lblNetID
-        ' 
-        lblNetID.AutoSize = True
-        lblNetID.Location = New Point(6, 30)
-        lblNetID.Name = "lblNetID"
-        lblNetID.Size = New Size(26, 15)
-        lblNetID.TabIndex = 4
-        lblNetID.Text = "Net"
-        ' 
-        ' lblClubID
-        ' 
-        lblClubID.AutoSize = True
-        lblClubID.Location = New Point(336, 30)
-        lblClubID.Name = "lblClubID"
-        lblClubID.Size = New Size(67, 15)
-        lblClubID.TabIndex = 6
-        lblClubID.Text = "Club Name"
-        ' 
-        ' txbClubName
-        ' 
-        txbClubName.Location = New Point(409, 27)
-        txbClubName.Name = "txbClubName"
-        txbClubName.Size = New Size(198, 23)
-        txbClubName.TabIndex = 5
-        ' 
-        ' lblModeID
-        ' 
-        lblModeID.AutoSize = True
-        lblModeID.Location = New Point(159, 72)
-        lblModeID.Name = "lblModeID"
-        lblModeID.Size = New Size(38, 15)
-        lblModeID.TabIndex = 12
-        lblModeID.Text = "Mode"
-        ' 
-        ' cmbMode
-        ' 
-        cmbMode.FormattingEnabled = True
-        cmbMode.Location = New Point(203, 69)
-        cmbMode.Name = "cmbMode"
-        cmbMode.Size = New Size(77, 23)
-        cmbMode.TabIndex = 13
-        ' 
-        ' cmbBand
-        ' 
-        cmbBand.FormattingEnabled = True
-        cmbBand.Location = New Point(334, 69)
-        cmbBand.Name = "cmbBand"
-        cmbBand.Size = New Size(77, 23)
-        cmbBand.TabIndex = 15
-        ' 
-        ' lblBandID
-        ' 
-        lblBandID.AutoSize = True
-        lblBandID.Location = New Point(290, 72)
-        lblBandID.Name = "lblBandID"
-        lblBandID.Size = New Size(34, 15)
-        lblBandID.TabIndex = 14
-        lblBandID.Text = "Band"
-        ' 
-        ' txbFrequency
-        ' 
-        txbFrequency.Location = New Point(77, 69)
-        txbFrequency.Name = "txbFrequency"
-        txbFrequency.Size = New Size(73, 23)
-        txbFrequency.TabIndex = 9
-        ' 
-        ' lblFrequencyID
-        ' 
-        lblFrequencyID.AutoSize = True
-        lblFrequencyID.Location = New Point(8, 72)
-        lblFrequencyID.Name = "lblFrequencyID"
-        lblFrequencyID.Size = New Size(62, 15)
-        lblFrequencyID.TabIndex = 10
-        lblFrequencyID.Text = "Frequency"
-        ' 
-        ' lblNetControlID
-        ' 
-        lblNetControlID.AutoSize = True
-        lblNetControlID.Location = New Point(8, 114)
-        lblNetControlID.Name = "lblNetControlID"
-        lblNetControlID.Size = New Size(24, 15)
-        lblNetControlID.TabIndex = 17
-        lblNetControlID.Text = "NC"
-        ' 
-        ' txbNetControl
-        ' 
-        txbNetControl.Location = New Point(40, 111)
-        txbNetControl.Name = "txbNetControl"
-        txbNetControl.Size = New Size(99, 23)
-        txbNetControl.TabIndex = 16
-        ' 
-        ' lblLogStationID
-        ' 
-        lblLogStationID.AutoSize = True
-        lblLogStationID.Location = New Point(166, 114)
-        lblLogStationID.Name = "lblLogStationID"
-        lblLogStationID.Size = New Size(19, 15)
-        lblLogStationID.TabIndex = 19
-        lblLogStationID.Text = "LS"
-        ' 
-        ' txbLogStation
-        ' 
-        txbLogStation.Location = New Point(191, 111)
-        txbLogStation.Name = "txbLogStation"
-        txbLogStation.Size = New Size(104, 23)
-        txbLogStation.TabIndex = 18
-        ' 
-        ' CS
-        ' 
-        CS.HeaderText = "Call Sign"
-        CS.Name = "CS"
-        CS.Resizable = DataGridViewTriState.True
-        CS.Width = 125
-        ' 
-        ' QST
-        ' 
-        QST.HeaderText = "QST"
-        QST.Name = "QST"
-        QST.Width = 50
-        ' 
-        ' Name
-        ' 
-        Name.HeaderText = "Name"
-        Name.Name = "Name"
-        Name.Width = 200
-        ' 
-        ' CITY
-        ' 
-        CITY.HeaderText = "Location"
-        CITY.Name = "CITY"
-        CITY.Width = 150
-        ' 
         ' grpboxType
         ' 
         grpboxType.BackColor = Color.SlateBlue
@@ -284,17 +259,6 @@ Partial Class frmMain
         grpboxType.TabStop = False
         grpboxType.Text = "Type"
         ' 
-        ' rbtnRepeater
-        ' 
-        rbtnRepeater.AutoSize = True
-        rbtnRepeater.Location = New Point(12, 24)
-        rbtnRepeater.Name = "rbtnRepeater"
-        rbtnRepeater.Size = New Size(71, 19)
-        rbtnRepeater.TabIndex = 0
-        rbtnRepeater.TabStop = True
-        rbtnRepeater.Text = "Repeater"
-        rbtnRepeater.UseVisualStyleBackColor = True
-        ' 
         ' rbtnSimplex
         ' 
         rbtnSimplex.AutoSize = True
@@ -305,6 +269,17 @@ Partial Class frmMain
         rbtnSimplex.TabStop = True
         rbtnSimplex.Text = "Simplex"
         rbtnSimplex.UseVisualStyleBackColor = True
+        ' 
+        ' rbtnRepeater
+        ' 
+        rbtnRepeater.AutoSize = True
+        rbtnRepeater.Location = New Point(12, 24)
+        rbtnRepeater.Name = "rbtnRepeater"
+        rbtnRepeater.Size = New Size(71, 19)
+        rbtnRepeater.TabIndex = 0
+        rbtnRepeater.TabStop = True
+        rbtnRepeater.Text = "Repeater"
+        rbtnRepeater.UseVisualStyleBackColor = True
         ' 
         ' lblSessionDateID
         ' 
@@ -395,9 +370,34 @@ Partial Class frmMain
         lblArrowID.TabIndex = 13
         lblArrowID.Text = "-->"
         ' 
+        ' CS
+        ' 
+        CS.HeaderText = "Call Sign"
+        CS.Name = "CS"
+        CS.Resizable = DataGridViewTriState.True
+        CS.Width = 125
+        ' 
+        ' QST
+        ' 
+        QST.HeaderText = "QST"
+        QST.Name = "QST"
+        QST.Width = 50
+        ' 
+        ' Name
+        ' 
+        Name.HeaderText = "Ham Name"
+        Name.Name = "Name"
+        Name.Width = 200
+        ' 
+        ' CITY
+        ' 
+        CITY.HeaderText = "Location"
+        CITY.Name = "CITY"
+        CITY.Width = 150
+        ' 
         ' frmMain
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 617)
         Controls.Add(lblArrowID)
@@ -414,7 +414,7 @@ Partial Class frmMain
         Controls.Add(grpboxType)
         Controls.Add(dgvCheckIns)
         Controls.Add(grpboxCNET)
-        Name = "frmMain"
+        'Name = "frmMain"
         Text = "Main Form"
         grpboxCNET.ResumeLayout(False)
         grpboxCNET.PerformLayout()
@@ -444,10 +444,6 @@ Partial Class frmMain
     Friend WithEvents txbLogStation As TextBox
     Friend WithEvents lblNetControlID As Label
     Friend WithEvents txbNetControl As TextBox
-    Friend WithEvents CS As DataGridViewTextBoxColumn
-    Friend WithEvents QST As DataGridViewTextBoxColumn
-    Friend WithEvents Name As DataGridViewTextBoxColumn
-    Friend WithEvents CITY As DataGridViewTextBoxColumn
     Friend WithEvents grpboxType As GroupBox
     Friend WithEvents rbtnSimplex As RadioButton
     Friend WithEvents rbtnRepeater As RadioButton
@@ -462,5 +458,9 @@ Partial Class frmMain
     Friend WithEvents txbTimeStart As TextBox
     Friend WithEvents txbTimeEnd As TextBox
     Friend WithEvents lblArrowID As Label
+    Friend WithEvents CS As DataGridViewTextBoxColumn
+    Friend WithEvents QST As DataGridViewTextBoxColumn
+    Friend WithEvents Name As DataGridViewTextBoxColumn
+    Friend WithEvents CITY As DataGridViewTextBoxColumn
 
 End Class
